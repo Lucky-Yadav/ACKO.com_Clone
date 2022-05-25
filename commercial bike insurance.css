@@ -3,13 +3,13 @@ body {
 }
 li, p {
     color: #444;
+    line-height: 25px;
 }
 .main {
     width: 85%;
     margin: auto;
     margin-top: 100px;
 }
-
 .blue{
     background-color: #5e27c9;
     color: #fff;
@@ -83,6 +83,65 @@ li, p {
     padding-left: 15px;
 
 }
+.mainFlex{
+    display: flex;
+    justify-content: space-between;    
+}
+.pic1 {
+    width: 400px;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 30px;
+}
+.middle {
+    text-align: center;
+    margin-top: 50px;
+}
+
+.middle>div>p{
+    font-size: 15px;
+    line-height: 25px;
+}
+
+.color1 {
+    background-color: #f6f7fb;
+}
+
+.flex1 {
+    display: flex;
+    gap: 90px;
+    padding: 100px;
+}
+.white1{
+    background-color: #fff;
+    border: none;
+    border-radius: 8px;
+    padding: 50px;
+}
+.buy{
+    margin-top: 100px;
+    padding-top: 70px;
+}
+.flex2{
+    display: flex;
+    gap: 20px;
+}
+.flex2 >div > h2 {
+    text-align: center;
+}
+.flex2 >div > p {
+    text-align: center;
+}
+.flex2 > div > img {
+    width: 100px;
+    margin-left: 130px;
+    margin-top: 20px;
+}
+.flex3 {
+    display: flex;
+    gap: 40px;
+    margin-top: 50px;
+}
 
 .table th, .table td{
     padding: 15px;
@@ -99,58 +158,37 @@ li, p {
     border-spacing: 0px;
     box-sizing: border-box;
     text-align: left;
-}
-
-.mainFlex{
-    display: flex;
-    justify-content: space-between;    
-}
-.pic1 {
     border-radius: 8px;
-    margin-bottom: 30px;
-}
-.middle {
-    text-align: center;
-    margin-top: 50px;
 }
 
-.middle>div>p{
-    font-size: 15px;
-    line-height: 25px;
-}
-.list {
-    line-height: 35px;
-}
-.table{
-    display: table;
-    border-collapse: separate;
-    box-sizing: border-box;
-    text-indent: initial;
-    border-spacing: 2px;
-    border-color: grey;
-}
-
-.grid1 {
+.flex4 {
     display: grid;
     grid-template-columns: repeat(3,1fr);
-    gap: 30px;
+    padding-top: 70px;
 }
-.grid1 > div > p {
-    line-height: 25px;
+.flex4 > div > h2 {
+   text-align: center;
 }
-.grid23 > div > p {
-    line-height: 25px;
+.flex4 > div > p {
+   text-align: center;
 }
-.grid23{
-    display: grid;
-    grid-template-columns: repeat(3,1fr);
-    gap : 30px;    
-}
-.div>ul> li{
-    line-height: 25px;
-}
-.div>p{
-    line-height: 25px;
-    
+.flex4 >div > img {
+    width: 125px;
+    margin-left: 150px;
 }
 
+.flex5 {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    padding-top: 70px;
+    gap: 50px;
+}
+
+.doSmall {
+    width: 90px;
+    padding-left: 150px;
+}
+.left {
+    padding-left: 130px;
+
+}
