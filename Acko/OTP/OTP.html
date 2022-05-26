@@ -136,17 +136,19 @@
 </body>
 <script>
 
+    document.querySelector("#a1").innerText = ""
+
     async function displayOtp(){
 
         let res = await fetch(`http://localhost:3000/users`)
         let data = await res.json();
 
         data.forEach(userData => {
-            document.querySelector("#a1").innerText = ""
-            document.querySelector("#a1").innerText = "+91 " + userData.number
-
 
             if(userData.isLogin == true){
+
+                document.querySelector("#a1").innerText = "+91 " + userData.number;
+                
         setTimeout(() => {
             document.getElementById("displayotp").classList.add("displayotp")
             document.getElementById("displayotp").innerText = ""
